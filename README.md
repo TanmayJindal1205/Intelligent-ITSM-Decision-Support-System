@@ -225,29 +225,6 @@ The analytics module provides interactive visualizations including:
 
 > 🚧 System architecture diagram will be added in a future update.
 
-```
-User
-   │
-   ▼
-Streamlit Frontend
-   │
-   ▼
-Prediction Engine
-   │
-   ├── Random Forest Model
-   ├── Recommendation Engine
-   └── SQLite Database
-   │
-   ▼
-Analytics Dashboard
-
-           │
-
-        FastAPI
-           │
-      External Clients
-```
-
 ---
 
 ## 🚀 Tech Stack
