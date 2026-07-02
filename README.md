@@ -553,8 +553,6 @@ Computer Science Undergraduate
 
 Netaji Subhas University of Technology (NSUT)
 
-### 🌐 Connect with Me
-
-- GitHub: <https://github.com/TanmayJindal1205>
+🌐 GitHub Profile: <https://github.com/TanmayJindal1205>
 
 If you found this project useful, consider giving it a ⭐ on GitHub.
