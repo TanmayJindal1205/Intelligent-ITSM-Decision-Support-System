@@ -545,7 +545,7 @@ See the **LICENSE** file for complete details.
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Tanmay Jindal**
 
