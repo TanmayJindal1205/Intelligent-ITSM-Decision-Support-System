@@ -120,7 +120,7 @@ The dataset contains historical IT service tickets and SLA outcomes collected fr
 
 The machine learning pipeline, application source code, trained model, and deployment components are included so the complete system architecture and implementation can be understood and reproduced.
 
-## 💼 Industry Relevance
+## Industry Relevance
 
 Service Level Agreement (SLA) violations can lead to operational delays, reduced customer satisfaction, and increased support costs.
 
@@ -162,20 +162,20 @@ This system enables IT support teams to proactively identify high-risk service t
 
 ## ✨ Key Features
 
-- 🔍 Predict SLA breach risk for new IT service tickets
-- 📊 Display breach probability with risk categorization
-- 💡 Generate operational recommendations based on prediction results
-- 📜 Maintain prediction history using SQLite
-- 📈 Interactive analytics dashboard with Plotly visualizations
-- 📁 Export prediction history to Excel
-- ⚡ REST API built with FastAPI
-- 🧠 Machine Learning inference using the best-performing model selected after evaluating multiple classification algorithms
-- 🔎 Model explainability using SHAP and feature importance analysis
-- 📦 Modular project structure for maintainability
+- Predict SLA breach risk for new IT service tickets
+- Display breach probability with risk categorization
+- Generate operational recommendations based on prediction results
+- Maintain prediction history using SQLite
+- Interactive analytics dashboard with Plotly visualizations
+- Export prediction history to Excel
+- REST API built with FastAPI
+- Machine Learning inference using the best-performing model selected after evaluating multiple classification algorithms
+- Model explainability using SHAP and feature importance analysis
+- Modular project structure for maintainability
 
 ---
 
-## 🖥️ Application Components
+## Application Components
 
 ### 1. Ticket Prediction
 
@@ -221,9 +221,9 @@ The analytics module provides interactive visualizations including:
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
-> 🚧 System architecture diagram will be added in a future update.
+> System architecture diagram will be added in a future update.
 
 ---
 
@@ -286,7 +286,7 @@ Deployment
 
 ---
 
-## 📊 Model Development
+## Model Development
 
 The following machine learning algorithms were trained and evaluated during experimentation:
 
@@ -318,7 +318,7 @@ The Random Forest classifier delivered the strongest overall performance among a
 
 ---
 
-## ⚙️ Data Preprocessing & Model Development
+## Data Preprocessing & Model Development
 
 The machine learning pipeline incorporates multiple preprocessing and model development steps, including:
 
@@ -334,7 +334,7 @@ The machine learning pipeline incorporates multiple preprocessing and model deve
 
 ---
 
-## 🎯 Prediction Output
+## Prediction Output
 
 For every newly created IT service ticket, the system generates:
 
@@ -347,7 +347,7 @@ These outputs are stored in a SQLite database and are available for historical a
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```text
 Intelligent-ITSM-Decision-Support-System
@@ -394,7 +394,7 @@ Intelligent-ITSM-Decision-Support-System
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
 ## 1. **Clone the Repository**
 
@@ -462,7 +462,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-# 🌐 REST API
+## 🌐 REST API
 
 The project exposes a RESTful API built using **FastAPI**, allowing external applications to integrate the trained SLA breach prediction model without using the Streamlit interface.
 
@@ -510,7 +510,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-# 🚀 Future Enhancements
+## Future Enhancements
 
 Although the current application is fully functional, several enhancements can further improve its capabilities:
 
@@ -528,7 +528,7 @@ Although the current application is fully functional, several enhancements can f
 
 ---
 
-# 🌍 Deployment
+## Deployment
 
 The application can be deployed as:
 
@@ -537,7 +537,7 @@ The application can be deployed as:
 
 Deployment links will be added after production deployment.
 
-# 📜 License
+## License
 
 This project is licensed under the MIT License.
 
@@ -545,7 +545,7 @@ See the **LICENSE** file for complete details.
 
 ---
 
-# Author
+## Author
 
 **Tanmay Jindal**
 
