@@ -126,7 +126,7 @@ Service Level Agreement (SLA) violations can lead to operational delays, reduced
 
 This system enables IT support teams to proactively identify high-risk service tickets at creation time, allowing early intervention through prioritization, escalation, and resource allocation. By combining machine learning predictions with interactive analytics and operational recommendations, the application supports data-driven decision-making in enterprise IT Service Management environments.
 
-# 📸 Application Preview
+## 📸 Application Preview
 
 ## Main Prediction Interface
 
