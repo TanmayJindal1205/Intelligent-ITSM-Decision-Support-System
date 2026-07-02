@@ -120,7 +120,7 @@ The dataset contains historical IT service tickets and SLA outcomes collected fr
 
 The machine learning pipeline, application source code, trained model, and deployment components are included so the complete system architecture and implementation can be understood and reproduced.
 
-## Industry Relevance
+### Industry Relevance
 
 Service Level Agreement (SLA) violations can lead to operational delays, reduced customer satisfaction, and increased support costs.
 
@@ -128,7 +128,7 @@ This system enables IT support teams to proactively identify high-risk service t
 
 ## 📸 Application Preview
 
-## Main Prediction Interface
+### Main Prediction Interface
 
 <p align="center">
   <img src="docs/images/prediction-page.png" width="95%">
@@ -136,7 +136,7 @@ This system enables IT support teams to proactively identify high-risk service t
 
 ---
 
-## Prediction History
+### Prediction History
 
 <p align="center">
   <img src="docs/images/history-page.png" width="95%">
@@ -144,7 +144,7 @@ This system enables IT support teams to proactively identify high-risk service t
 
 ---
 
-## Analytics Dashboard
+### Analytics Dashboard
 
 <p align="center">
   <img src="docs/images/analytics-dashboard.png" width="95%">
@@ -152,7 +152,7 @@ This system enables IT support teams to proactively identify high-risk service t
 
 ---
 
-## REST API (Swagger)
+### REST API (Swagger)
 
 <p align="center">
   <img src="docs/images/swagger-api.png" width="95%">
@@ -396,7 +396,7 @@ Intelligent-ITSM-Decision-Support-System
 
 ## ⚙️ Installation
 
-## 1. **Clone the Repository**
+### 1. **Clone the Repository**
 
 ```bash
 git clone https://github.com/TanmayJindal1205/Intelligent-ITSM-Decision-Support-System.git
@@ -406,9 +406,9 @@ cd Intelligent-ITSM-Decision-Support-System
 
 ---
 
-## 2. **Create a Virtual Environment**
+### 2. **Create a Virtual Environment**
 
-### **Windows**
+#### **Windows**
 
 ```bash
 python -m venv .venv
@@ -416,7 +416,7 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### **macOS / Linux**
+#### **macOS / Linux**
 
 ```bash
 python3 -m venv .venv
@@ -426,7 +426,7 @@ source .venv/bin/activate
 
 ---
 
-## 3. **Install Dependencies**
+### 3. **Install Dependencies**
 
 ```bash
 pip install -r requirements.txt
@@ -434,7 +434,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4. **Run the Streamlit Application**
+### 4. **Run the Streamlit Application**
 
 ```bash
 streamlit run app.py
@@ -448,7 +448,7 @@ http://localhost:8501
 
 ---
 
-## 5. **Run the FastAPI Backend**
+### 5. **Run the FastAPI Backend**
 
 ```bash
 uvicorn api.main:app --reload
@@ -466,7 +466,7 @@ http://127.0.0.1:8000/docs
 
 The project exposes a RESTful API built using **FastAPI**, allowing external applications to integrate the trained SLA breach prediction model without using the Streamlit interface.
 
-## Available Endpoint
+### Available Endpoint
 
 ### Predict SLA Breach
 
@@ -541,7 +541,7 @@ Deployment links will be added after production deployment.
 
 This project is licensed under the MIT License.
 
-See the **LICENSE** file for complete details.
+See the **<LICENSE>** file for complete details.
 
 ---
 
