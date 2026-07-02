@@ -19,14 +19,15 @@
 <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge">
 </a>
 
-</p>
+<p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
-![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-green?style=for-the-badge&logo=fastapi)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine_Learning-orange?style=for-the-badge&logo=scikitlearn)
-![SQLite](https://img.shields.io/badge/SQLite-Database-blue?style=for-the-badge&logo=sqlite)
-![Plotly](https://img.shields.io/badge/Plotly-Analytics-purple?style=for-the-badge&logo=plotly)
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-REST%20API-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Plotly-Analytics-3F4F75?style=flat-square&logo=plotly&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />
 
 </p>
 
@@ -47,7 +48,7 @@ The system combines:
 
 to enable proactive SLA risk assessment and operational decision support.
 
-## 🚀 Project Highlights
+## Project Highlights
 
 - Real enterprise ITSM dataset (JSL)
 - Six machine learning algorithms evaluated
@@ -85,7 +86,7 @@ to enable proactive SLA risk assessment and operational decision support.
 - [License](#-license)
 - [Author](#-author)
 
-## 📌 Project Overview
+## Project Overview
 
 The **Intelligent ITSM Decision Support System** is an end-to-end Machine Learning application designed to proactively identify IT service tickets that are likely to breach Service Level Agreements (SLAs).
 
@@ -95,7 +96,7 @@ The application combines a trained Machine Learning model, an interactive Stream
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 This project was developed using **real-world enterprise IT Service Management (ITSM) ticket data** from **Jindal Stainless Limited (JSL), Hisar**.
 
@@ -126,7 +127,7 @@ Service Level Agreement (SLA) violations can lead to operational delays, reduced
 
 This system enables IT support teams to proactively identify high-risk service tickets at creation time, allowing early intervention through prioritization, escalation, and resource allocation. By combining machine learning predictions with interactive analytics and operational recommendations, the application supports data-driven decision-making in enterprise IT Service Management environments.
 
-## 📸 Application Preview
+## Application Preview
 
 ### Main Prediction Interface
 
@@ -160,7 +161,7 @@ This system enables IT support teams to proactively identify high-risk service t
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - Predict SLA breach risk for new IT service tickets
 - Display breach probability with risk categorization
@@ -227,7 +228,7 @@ The analytics module provides interactive visualizations including:
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 | Category | Technologies |
 |-----------|--------------|
@@ -244,7 +245,7 @@ The analytics module provides interactive visualizations including:
 
 ---
 
-## 🧠 Machine Learning Pipeline
+## Machine Learning Pipeline
 
 The predictive model was developed using a complete supervised machine learning workflow to identify IT service tickets that are likely to breach their Service Level Agreements (SLAs).
 
@@ -303,7 +304,7 @@ The finalized model was serialized using Joblib and integrated into both the Str
 
 ---
 
-## 📈 Model Performance
+## Model Performance
 
 | Metric | Score |
 |---------|------:|
@@ -462,7 +463,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🌐 REST API
+## REST API
 
 The project exposes a RESTful API built using **FastAPI**, allowing external applications to integrate the trained SLA breach prediction model without using the Streamlit interface.
 
