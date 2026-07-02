@@ -62,29 +62,6 @@ to enable proactive SLA risk assessment and operational decision support.
 
 > **Developed during a Summer Internship at Jindal Stainless Limited (JSL), Hisar using real enterprise ITSM ticket data.**
 
-## 📚 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Dataset](#-dataset)
-- [Industry Relevance](#-industry-relevance)
-- [Application Preview](#-application-preview)
-- [Key Features](#-key-features)
-- [Application Components](#️-application-components)
-- [Project Architecture](#️-project-architecture)
-- [Technology Stack](#-tech-stack)
-- [Machine Learning Pipeline](#-machine-learning-pipeline)
-- [Model Development](#-model-development)
-- [Model Performance](#-model-performance)
-- [Data Preprocessing & Model Development](#️-data-preprocessing--model-development)
-- [Prediction Output](#-prediction-output)
-- [Project Structure](#-project-structure)
-- [Installation](#️-installation)
-- [REST API](#-rest-api)
-- [Future Enhancements](#-future-enhancements)
-- [Deployment](#-deployment)
-- [License](#-license)
-- [Author](#-author)
-
 ## Project Overview
 
 The **Intelligent ITSM Decision Support System** is an end-to-end Machine Learning application designed to proactively identify IT service tickets that are likely to breach Service Level Agreements (SLAs).
