@@ -19,9 +19,11 @@ app = FastAPI(
 # LOAD MODEL
 # ==========================================================
 
-model = joblib.load(
-    Path("model") / "final_model.pkl"
-)
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MODEL_PATH = BASE_DIR / "model" / "final_model.pkl"
+
+model = joblib.load(MODEL_PATH)
 
 @app.get("/")
 def home():
