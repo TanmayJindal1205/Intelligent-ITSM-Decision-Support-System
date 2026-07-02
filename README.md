@@ -32,7 +32,6 @@
 <img src="https://img.shields.io/badge/License-MIT-2E7D32?style=for-the-badge" />
 
 </p>
----
 
 ## Executive Summary
 
