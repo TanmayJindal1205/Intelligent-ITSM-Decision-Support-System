@@ -3,6 +3,7 @@ from pathlib import Path
 from datetime import datetime
 
 DB_PATH = Path("database") / "predictions.db"
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 
 def create_database():
