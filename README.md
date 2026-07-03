@@ -1,5 +1,6 @@
 <p align="center">
-<img src="docs/images/banner.png" width="100%">
+<<img width="1774" height="887" alt="ChatGPT Image Jul 4, 2026, 01_25_30 AM" src="https://github.com/user-attachments/assets/c2e5e15e-0508-4904-a1e5-d1c2a72e46dc" />
+>
 </p>
 
 # 🛠️ Intelligent ITSM Decision Support System
