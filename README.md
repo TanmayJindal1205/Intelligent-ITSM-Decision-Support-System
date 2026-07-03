@@ -113,6 +113,14 @@ This system enables IT support teams to proactively identify high-risk service t
 
 ---
 
+### Prediction Result
+
+<p align="center">
+  <img src="docs/images/prediction-page.png" width="95%">
+</p>
+
+---
+
 ### Prediction History
 
 <p align="center">
@@ -558,9 +566,7 @@ The application enables proactive identification of high-risk service tickets, h
 
 This project is licensed under the MIT License.
 
-See the **<LICENSE>** file for complete details.
-
----
+For more information, see the [LICENSE](LICENSE) file.
 
 ## Author
 
