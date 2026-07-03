@@ -393,7 +393,7 @@ Intelligent-ITSM-Decision-Support-System
 │   └── predictions.db
 │
 ├── docs/
-└── images/                      # Documentation screenshots
+    └── images/                  # Documentation screenshots
 │
 ├── model/                       # Trained ML model
 │   ├── final_model.pkl
