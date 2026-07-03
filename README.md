@@ -6,11 +6,11 @@
 
 <p align="center">
 
-<a href="YOUR_STREAMLIT_URL">
-<img src="https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-FF4B4B?style=for-the-badge" />
+<a href="https://itsm-decision-support.streamlit.app">
+<img src="https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-FF4B4B?style=for-the-badge">
 </a>
 
-<a href="YOUR_FASTAPI_URL/docs">
+<a href="https://intelligent-itsm-api.onrender.com/docs">
 <img src="https://img.shields.io/badge/API-Swagger-00C853?style=for-the-badge&logo=swagger&logoColor=white" />
 </a>
 
@@ -200,7 +200,37 @@ The analytics module provides interactive visualizations including:
 
 ## Project Architecture
 
-> System architecture diagram will be added in a future update.
+```mermaid
+flowchart TD
+
+    U["👤 User"]
+
+    U --> S["🎨 Streamlit Frontend
+    User Interface"]
+
+    S -->|"REST API (HTTP POST)"| F["⚡ FastAPI Backend"]
+
+    F --> P["🧹 Data Preprocessing
+    Feature Encoding"]
+
+    P --> M["🤖 Random Forest
+    ML Model (.pkl)"]
+
+    M --> R["📊 Prediction
+    Probability
+    Risk Level"]
+
+    R --> DB["🗄️ SQLite Database
+    Prediction History"]
+
+    DB --> D["📈 Analytics Dashboard"]
+
+    R --> F
+    F --> S
+    D --> S
+
+    S --> U
+```
 
 ---
 
