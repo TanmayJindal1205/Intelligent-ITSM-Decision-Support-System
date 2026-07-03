@@ -536,6 +536,11 @@ The application is deployed as:
 - Streamlit Cloud (Frontend)
 - Render (FastAPI Backend)
 
+### Live Application
+
+- Streamlit Frontend: [https://itsm-decision-support.streamlit.app](https://itsm-decision-support.streamlit.app/)
+- FastAPI Swagger: [https://intelligent-itsm-api.onrender.com/docs](https://intelligent-itsm-api.onrender.com/docs)
+
 ## Results
 
 The deployed system successfully integrates machine learning with enterprise ITSM workflows by providing:
@@ -548,11 +553,6 @@ The deployed system successfully integrates machine learning with enterprise ITS
 - REST API for external integration
 
 The application enables proactive identification of high-risk service tickets, helping IT teams prioritize critical incidents before SLA violations occur.
-
-### Live Application
-
-- Streamlit Frontend: [https://itsm-decision-support.streamlit.app](https://itsm-decision-support.streamlit.app/)
-- FastAPI Swagger: [https://intelligent-itsm-api.onrender.com/docs](https://intelligent-itsm-api.onrender.com/docs)
 
 ## License
 
