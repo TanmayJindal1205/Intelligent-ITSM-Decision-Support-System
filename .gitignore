@@ -85,3 +85,11 @@ dist/
 
 htmlcov/
 .coverage
+
+# ==========================
+# SQLite Temporary Files
+# ==========================
+
+*.db-journal
+*.db-wal
+*.db-shm
