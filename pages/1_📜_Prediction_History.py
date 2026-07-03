@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
 from components.ui import dropdown
-from database.database import get_all_predictions
+import requests
 from datetime import datetime
 from io import BytesIO
+
+API_BASE_URL = "https://intelligent-itsm-api.onrender.com"
+
+HISTORY_API = f"{API_BASE_URL}/history"
 
 st.set_page_config(
     page_title="Prediction History",
@@ -13,9 +17,16 @@ st.set_page_config(
 
 st.title("📜 Prediction History")
 
-records = get_all_predictions()
+try:
+    response = requests.get(HISTORY_API, timeout=30)
+    response.raise_for_status()
+    history = response.json()
 
-if len(records) == 0:
+except Exception as e:
+    st.error(f"Unable to fetch prediction history.\n\n{e}")
+    st.stop()
+
+if len(history) == 0:
 
     st.info("No predictions available.")
 
@@ -39,7 +50,7 @@ else:
         "Risk Level"
     ]
 
-    df = pd.DataFrame(records, columns=columns)
+    df = pd.DataFrame(history)
 
     # ==========================================================
     # FILTER CONFIGURATION
@@ -75,11 +86,6 @@ else:
         ]
     }
 
-    # Convert prediction values to readable text
-    df["Prediction"] = df["Prediction"].map({
-        0: "No Breach",
-        1: "Breach"
-    })
 
     # Format probability
     df["Probability"] = df["Probability"].round(2)
@@ -307,9 +313,7 @@ else:
 
         )
 
-        display_df["Probability"] = display_df["Probability"].map(
-            lambda x: f"{x:.2f}%"
-        )
+        display_df["Probability"] = display_df["Probability"]
 
         st.dataframe(
             display_df,

@@ -9,9 +9,13 @@ from components.charts import (
     create_hour_distribution_chart,
     create_high_risk_chart
 )
-from database.database import get_all_predictions
+import requests
 from io import BytesIO
 from datetime import datetime
+
+API_BASE_URL = "https://intelligent-itsm-api.onrender.com"
+
+HISTORY_API = f"{API_BASE_URL}/history"
 
 # ==========================================================
 # PAGE CONFIGURATION
@@ -35,42 +39,42 @@ st.divider()
 # LOAD DATA
 # ==========================================================
 
-records = get_all_predictions()
+API_BASE_URL = "https://YOUR-RENDER-URL.onrender.com"
 
-if len(records) == 0:
+try:
+
+    response = requests.get(
+        HISTORY_API,
+        timeout=30
+    )
+
+    response.raise_for_status()
+
+    history = response.json()
+
+except Exception as e:
+
+    st.error(f"Unable to load analytics data.\n\n{e}")
+
+    st.stop()
+
+if len(history) == 0:
 
     st.info("No prediction history available.")
 
     st.stop()
 
-columns = [
-    "ID",
-    "Timestamp",
-    "Priority",
-    "Category",
-    "Sub Category",
-    "Department",
-    "Group",
-    "Site",
-    "Request Type",
-    "Created Day",
-    "Created Month",
-    "Created Hour",
-    "Prediction",
-    "Probability",
-    "Risk Level"
-]
+df = pd.DataFrame(history)
 
-df = pd.DataFrame(records, columns=columns)
+df["Probability"] = (
+    df["Probability"]
+    .str.replace("%", "", regex=False)
+    .astype(float)
+)
 
 # ==========================================================
 # DATA PREPARATION
 # ==========================================================
-
-df["Prediction"] = df["Prediction"].map({
-    0: "No Breach",
-    1: "Breach"
-})
 
 df["Probability"] = df["Probability"].round(2)
 

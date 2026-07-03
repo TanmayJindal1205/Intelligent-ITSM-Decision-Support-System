@@ -1,13 +1,16 @@
 import streamlit as st
-import joblib
+import requests
 import json
 from pathlib import Path
 import pandas as pd
-from components.prediction import get_prediction_result
-from components.recommendations import get_recommendations
 from components.cards import metric_card
-from database.database import create_database, save_prediction
 from components.ui import dropdown
+
+API_BASE_URL = "https://intelligent-itsm-api.onrender.com"
+
+PREDICT_API = f"{API_BASE_URL}/predict"
+HISTORY_API = f"{API_BASE_URL}/history"
+ANALYTICS_API = f"{API_BASE_URL}/analytics"
 
 def load_css():
 
@@ -19,18 +22,6 @@ def load_css():
         )
 
 load_css()
-
-create_database()
-
-# ==========================================================
-# LOAD MODEL
-# ==========================================================
-
-@st.cache_resource
-def load_model():
-    return joblib.load("model/final_model.pkl")
-
-model = load_model()
 
 # ==========================================================
 # LOAD DROPDOWN VALUES
@@ -277,40 +268,63 @@ if predict_button:
         "Created_Hour": [created_hour]
     })
 
-    # -------------------------------
-    # Make Prediction
-    # -------------------------------
+    API_URL = PREDICT_API
 
-    (
-        prediction,
-        probability,
-        breach_probability,
-        prediction_text,
-        prediction_color,
-        risk_level,
-        risk_color
-    ) = get_prediction_result(model, input_data)
+    payload = {
+        "Priority": priority,
+        "Category": category,
+        "Sub_Category": sub_category,
+        "Department": department,
+        "Group": group,
+        "Site": site,
+        "Request_Type": request_type,
+        "Created_Day": created_day,
+        "Created_Month": created_month,
+        "Created_Hour": created_hour
+    }
 
-    save_prediction(
-        priority,
-        category,
-        sub_category,
-        department,
-        group,
-        site,
-        request_type,
-        created_day,
-        created_month,
-        created_hour,
-        prediction,
-        breach_probability,
-        risk_level
+    try:
+
+        response = requests.post(
+            API_URL,
+            json=payload,
+            timeout=30
+        )
+
+        response.raise_for_status()
+
+        result = response.json()
+
+    except Exception as e:
+
+        st.error(f"Unable to connect to the prediction server.\n\n{e}")
+        st.stop()
+
+    prediction_text = result["prediction"]
+
+    breach_probability = result["breach_probability"]
+
+    risk_level = result["risk_level"]
+
+    recommendations = result["recommendations"]
+
+    prediction = (
+        1
+        if prediction_text == "SLA Breach Expected"
+        else 0
     )
 
-    recommendations = get_recommendations(
-        priority,
-        breach_probability
+    prediction_color = (
+        "#ef4444"
+        if prediction == 1
+        else "#22c55e"
     )
+
+    risk_color = {
+        "LOW": "#22c55e",
+        "MEDIUM": "#facc15",
+        "HIGH": "#ef4444"
+    }[risk_level]
 
     # ==========================================================
     # Prediction Result
