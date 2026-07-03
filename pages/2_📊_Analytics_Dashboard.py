@@ -39,7 +39,6 @@ st.divider()
 # LOAD DATA
 # ==========================================================
 
-API_BASE_URL = "https://YOUR-RENDER-URL.onrender.com"
 
 try:
 
