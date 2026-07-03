@@ -313,8 +313,6 @@ else:
 
         )
 
-        display_df["Probability"] = display_df["Probability"]
-
         st.dataframe(
             display_df,
             use_container_width=True,
