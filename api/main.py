@@ -25,20 +25,20 @@ MODEL_PATH = BASE_DIR / "model" / "final_model.pkl"
 
 model = joblib.load(MODEL_PATH)
 
-@app.get("/")
+@app.get("/", tags=["General"])
 def home():
     return {
         "message": "Welcome to the ITMS Decision Support API!"
     }
 
 
-@app.get("/health")
+@app.get("/health", tags=["General"])
 def health():
     return {
         "status": "running"
     }
 
-@app.post("/predict")
+@app.post("/predict", tags=["Prediction"])
 def predict(ticket: TicketRequest):
 
     input_data = pd.DataFrame({
@@ -106,7 +106,7 @@ def predict(ticket: TicketRequest):
 
     }
 
-@app.get("/history")
+@app.get("/history", tags=["History"])
 def get_history():
 
     records = get_all_predictions()
@@ -149,7 +149,7 @@ def get_history():
 
     return history
 
-@app.get("/analytics")
+@app.get("/analytics", tags=["Analytics"])
 def get_analytics():
 
     records = get_all_predictions()
@@ -176,6 +176,14 @@ def get_analytics():
         records,
         columns=columns
     )
+
+    if df.empty:
+        return {
+            "total_predictions": 0,
+            "breach_rate": 0,
+            "high_risk_tickets": 0,
+            "average_probability": 0
+        }
 
     # Convert predictions to readable text
     df["Prediction"] = df["Prediction"].map({
