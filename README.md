@@ -1,6 +1,7 @@
 <p align="center">
-<<img width="1774" height="887" alt="ChatGPT Image Jul 4, 2026, 01_25_30 AM" src="https://github.com/user-attachments/assets/c2e5e15e-0508-4904-a1e5-d1c2a72e46dc" />
->
+    
+<img width="1983" height="793" alt="ChatGPT Image Jul 4, 2026, 01_31_27 AM" src="https://github.com/user-attachments/assets/b8f43d5c-a8e2-4fe7-b55f-fd99a7376d39" />
+
 </p>
 
 # 🛠️ Intelligent ITSM Decision Support System
