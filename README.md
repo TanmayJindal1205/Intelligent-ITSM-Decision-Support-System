@@ -108,8 +108,7 @@ This system enables IT support teams to proactively identify high-risk service t
 ### Main Prediction Interface
 
 <p align="center">
-  <img src="<img width="1470" height="829" alt="1" src="https://github.com/user-attachments/assets/cf79ad41-56a2-435e-a431-142a4e68ec8a" />
-">
+    <img width="1470" height="789" alt="3" src="https://github.com/user-attachments/assets/e81274c3-d630-4f55-b9b7-fd81e8b0420f" />
 </p>
 
 ---
@@ -117,8 +116,7 @@ This system enables IT support teams to proactively identify high-risk service t
 ### Prediction Result
 
 <p align="center">
-  <img src="<img width="1236" height="498" alt="2" src="https://github.com/user-attachments/assets/8e941990-f2c9-4437-b095-843070f363a6" />
-">
+    <img width="1253" height="656" alt="4 1" src="https://github.com/user-attachments/assets/9b79b0c4-249f-46a2-b9d1-d20cae03b5aa" />
 </p>
 
 ---
@@ -126,8 +124,7 @@ This system enables IT support teams to proactively identify high-risk service t
 ### Prediction History
 
 <p align="center">
-  <img src="<img width="1470" height="789" alt="3" src="https://github.com/user-attachments/assets/e81274c3-d630-4f55-b9b7-fd81e8b0420f" />
-">
+    <img width="1470" height="789" alt="3" src="https://github.com/user-attachments/assets/e81274c3-d630-4f55-b9b7-fd81e8b0420f" />
 </p>
 
 ---
@@ -135,16 +132,15 @@ This system enables IT support teams to proactively identify high-risk service t
 ### Analytics Dashboard
 
 <p align="center">
-  <img src="<img width="1253" height="656" alt="4 1" src="https://github.com/user-attachments/assets/9b79b0c4-249f-46a2-b9d1-d20cae03b5aa" />
-">
-</p>
-
- <p align="center">
-  <img src="<img width="1189" height="799" alt="4 2" src="https://github.com/user-attachments/assets/bdc540fa-8df0-4545-8026-d69ee612c311" />
+    <img width="1253" height="656" alt="4 1" src="https://github.com/user-attachments/assets/9b79b0c4-249f-46a2-b9d1-d20cae03b5aa" />
 </p>
 
 <p align="center">
-  <img src="<img width="1133" height="467" alt="4 3" src="https://github.com/user-attachments/assets/6a55ec4c-a834-4a1e-83e5-e33439ab9aec" />
+    <img width="1189" height="799" alt="4 2" src="https://github.com/user-attachments/assets/bdc540fa-8df0-4545-8026-d69ee612c311" />
+</p>
+
+<p align="center">
+    <img width="1133" height="467" alt="4 3" src="https://github.com/user-attachments/assets/6a55ec4c-a834-4a1e-83e5-e33439ab9aec" />
 </p>
 
 ---
@@ -152,8 +148,7 @@ This system enables IT support teams to proactively identify high-risk service t
 ### REST API (Swagger)
 
 <p align="center">
-  <img src="<img width="1336" height="725" alt="5" src="https://github.com/user-attachments/assets/e62f67de-f46b-42b2-9a1d-a24a2c751dc4" />
-">
+    <img width="1336" height="725" alt="5" src="https://github.com/user-attachments/assets/e62f67de-f46b-42b2-9a1d-a24a2c751dc4" />
 </p>
 
 ---
