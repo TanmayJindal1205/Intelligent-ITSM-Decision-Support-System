@@ -51,7 +51,7 @@ to enable proactive SLA risk assessment and operational decision support.
 
 - Real enterprise ITSM dataset (JSL)
 - Six machine learning algorithms evaluated
-- Random Forest selected as the production model
+- Production-ready Random Forest model
 - 88.53% Accuracy
 - ROC-AUC: 0.9060
 - Streamlit + FastAPI architecture
@@ -531,12 +531,28 @@ Although the current application is fully functional, several enhancements can f
 
 ## Deployment
 
-The application can be deployed as:
+The application is deployed as:
 
 - Streamlit Cloud (Frontend)
-- Render / Railway (FastAPI Backend)
+- Render (FastAPI Backend)
 
-Deployment links will be added after production deployment.
+## Results
+
+The deployed system successfully integrates machine learning with enterprise ITSM workflows by providing:
+
+- Real-time SLA breach prediction
+- Probability-based risk assessment
+- Automated operational recommendations
+- Persistent prediction history
+- Interactive analytics dashboard
+- REST API for external integration
+
+The application enables proactive identification of high-risk service tickets, helping IT teams prioritize critical incidents before SLA violations occur.
+
+### Live Application
+
+- Streamlit Frontend: [https://itsm-decision-support.streamlit.app](https://itsm-decision-support.streamlit.app/)
+- FastAPI Swagger: [https://intelligent-itsm-api.onrender.com/docs](https://intelligent-itsm-api.onrender.com/docs)
 
 ## License
 
@@ -550,7 +566,7 @@ See the **<LICENSE>** file for complete details.
 
 **Tanmay Jindal**
 
-Computer Science Undergraduate
+Computer Science Enginerring Undergraduate
 
 Netaji Subhas University of Technology (NSUT)
 
