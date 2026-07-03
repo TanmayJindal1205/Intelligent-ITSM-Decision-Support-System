@@ -34,11 +34,17 @@
 
 </p>
 
+<p align="center">
+
+Enterprise AI-powered Decision Support System for proactive SLA breach prediction in IT Service Management.
+
+</p>
+
 ## Executive Summary
 
 The Intelligent ITSM Decision Support System is an enterprise-focused machine learning application that predicts Service Level Agreement (SLA) breach risk for newly created IT service tickets using real-world ITSM data from Jindal Stainless Limited (JSL). The system combines predictive analytics, operational recommendations, historical tracking, and interactive dashboards to support proactive IT service management.
 
-The system combines:
+The application integrates:
 
 - Machine Learning Prediction
 - Streamlit Dashboard
@@ -51,16 +57,15 @@ to enable proactive SLA risk assessment and operational decision support.
 
 ## Project Highlights
 
-- Real enterprise ITSM dataset (JSL)
-- Six machine learning algorithms evaluated
-- Production-ready Random Forest model
-- 88.53% Accuracy
-- ROC-AUC: 0.9060
-- Streamlit + FastAPI architecture
-- SQLite persistence
-- Plotly analytics dashboard
-- Excel export support
-- SHAP explainability
+• Enterprise ITSM Dataset (JSL)
+• Random Forest Production Model
+• 88.53% Accuracy
+• ROC-AUC: 0.9060
+• Streamlit + FastAPI Architecture
+• Interactive Analytics Dashboard
+• SQLite Prediction History
+• SHAP Explainability
+• Excel Export
 
 > **Developed during a Summer Internship at Jindal Stainless Limited (JSL), Hisar using real enterprise ITSM ticket data.**
 
@@ -387,7 +392,7 @@ Intelligent-ITSM-Decision-Support-System
 │   ├── database.py
 │   └── predictions.db
 │
-├── docs/                        # Documentation and screenshots
+├── docs/images                  # Documentation and screenshots
 │
 ├── model/                       # Trained ML model
 │   ├── final_model.pkl
@@ -483,7 +488,7 @@ http://127.0.0.1:8000/docs
 
 ## REST API
 
-The project exposes a RESTful API built using **FastAPI**, allowing external applications to integrate the trained SLA breach prediction model without using the Streamlit interface.
+The project exposes a RESTful API built using FastAPI, allowing external applications to integrate the trained SLA breach prediction model.
 
 ### Available Endpoint
 
@@ -495,16 +500,16 @@ The project exposes a RESTful API built using **FastAPI**, allowing external app
 
 ```json
 {
-  "priority": "High",
-  "category": "Software",
-  "sub_category": "Application",
-  "department": "IT",
-  "group": "Infrastructure",
-  "site": "Head Office",
-  "request_type": "Incident",
-  "created_day": "Monday",
-  "created_month": "January",
-  "created_hour": 14
+  "Priority": "Severity - 1 (High Priority)",
+  "Category": "Email",
+  "Sub_Category": "Battery",
+  "Department": "Admin & Security",
+  "Group": "JSHL Jindal Club",
+  "Site": "Hisar Plant – FMS AMC Support",
+  "Request_Type": "Service Request",
+  "Created_Day": "Wednesday",
+  "Created_Month": "April",
+  "Created_Hour": 13
 }
 ```
 
@@ -512,10 +517,16 @@ The project exposes a RESTful API built using **FastAPI**, allowing external app
 
 ```json
 {
-  "prediction": "Breach",
-  "probability": 0.91,
+  "prediction": "SLA Breach Expected",
+  "breach_probability": 69.78,
   "risk_level": "HIGH",
-  "recommendation": "Immediate escalation recommended."
+  "recommendations": [
+    "Assign immediately.",
+    "Escalate to a senior engineer.",
+    "Notify the department manager.",
+    "Continuously monitor SLA progress.",
+    "Allocate additional resources if required."
+  ]
 }
 ```
 
@@ -547,7 +558,7 @@ Although the current application is fully functional, several enhancements can f
 
 ---
 
-## Deployment
+## Live Deployment
 
 The application is deployed as:
 
@@ -559,7 +570,7 @@ The application is deployed as:
 - Streamlit Frontend: [https://itsm-decision-support.streamlit.app](https://itsm-decision-support.streamlit.app/)
 - FastAPI Swagger: [https://intelligent-itsm-api.onrender.com/docs](https://intelligent-itsm-api.onrender.com/docs)
 
-## Results
+## Project Outcomes
 
 The deployed system successfully integrates machine learning with enterprise ITSM workflows by providing:
 
