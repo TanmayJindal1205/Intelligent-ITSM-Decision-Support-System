@@ -203,27 +203,27 @@ The analytics module provides interactive visualizations including:
 ```mermaid
 flowchart TD
 
-    U["👤 User"]
+    U["User"]
 
-    U --> S["🎨 Streamlit Frontend
+    U --> S["Streamlit Frontend
     User Interface"]
 
-    S -->|"REST API (HTTP POST)"| F["⚡ FastAPI Backend"]
+    S -->|"REST API (HTTP POST)"| F["FastAPI Backend"]
 
-    F --> P["🧹 Data Preprocessing
+    F --> P["Data Preprocessing
     Feature Encoding"]
 
-    P --> M["🤖 Random Forest
+    P --> M["Random Forest
     ML Model (.pkl)"]
 
-    M --> R["📊 Prediction
+    M --> R["Prediction
     Probability
     Risk Level"]
 
-    R --> DB["🗄️ SQLite Database
+    R --> DB["SQLite Database
     Prediction History"]
 
-    DB --> D["📈 Analytics Dashboard"]
+    DB --> D["Analytics Dashboard"]
 
     R --> F
     F --> S
