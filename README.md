@@ -570,7 +570,7 @@ The application is publicly deployed using:
 - Streamlit Frontend: [https://itsm-decision-support.streamlit.app](https://itsm-decision-support.streamlit.app/)
 - FastAPI Swagger: [https://intelligent-itsm-api.onrender.com/docs](https://intelligent-itsm-api.onrender.com/docs)
 
-> **Note**
+> **Note:**
 > The live demo uses a pre-populated SQLite database for demonstration purposes. New predictions created in the deployed application are intended for interactive exploration and may not persist across service redeployments due to the use of SQLite on ephemeral cloud infrastructure. For production deployments, a persistent database such as PostgreSQL is recommended.
 
 ## Project Outcomes
