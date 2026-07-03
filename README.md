@@ -217,17 +217,13 @@ flowchart TD
 
     M --> R["Prediction Response<br/>• SLA Breach Prediction<br/>• Probability Score<br/>• Risk Level"]
 
-    R --> ST["Store Prediction"]
+    R --> ST["Store Prediction Record"]
 
     ST --> DB["SQLite Database"]
 
     DB --> PH["Prediction History"]
 
     DB --> AD["Analytics Dashboard"]
-
-    PH --> S
-
-    AD --> S
 
     S --> U
 ```
