@@ -2,9 +2,14 @@ import streamlit as st
 import requests
 import json
 from pathlib import Path
-import pandas as pd
 from components.cards import metric_card
 from components.ui import dropdown
+
+st.set_page_config(
+    page_title="Intelligent ITSM Decision Support System",
+    page_icon="🛠️",
+    layout="wide"
+)
 
 API_BASE_URL = "https://intelligent-itsm-api.onrender.com"
 
@@ -72,15 +77,6 @@ metadata["Created_Month"] = [
     month for month in month_order
     if month in metadata["Created_Month"]
 ]
-
-# --------------------------------------------------
-# Page Configuration
-# --------------------------------------------------
-st.set_page_config(
-    page_title="Intelligent ITSM Decision Support System",
-    page_icon="🛠️",
-    layout="wide"
-)
 
 # --------------------------------------------------
 # Header
@@ -255,22 +251,7 @@ if predict_button:
     # Prepare Input Data
     # -------------------------------
 
-    input_data = pd.DataFrame({
-        "Priority": [priority],
-        "Category": [category],
-        "Sub Category": [sub_category],
-        "Department": [department],
-        "Group": [group],
-        "Site": [site],
-        "Request Type": [request_type],
-        "Created_Day": [created_day],
-        "Created_Month": [created_month],
-        "Created_Hour": [created_hour]
-    })
-
-    API_URL = PREDICT_API
-
-    payload = {
+        payload = {
         "Priority": priority,
         "Category": category,
         "Sub_Category": sub_category,
@@ -282,11 +263,11 @@ if predict_button:
         "Created_Month": created_month,
         "Created_Hour": created_hour
     }
-
+    
     try:
-
+    
         response = requests.post(
-            API_URL,
+            PREDICT_API,
             json=payload,
             timeout=30
         )
