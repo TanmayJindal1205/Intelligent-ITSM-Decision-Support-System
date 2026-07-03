@@ -200,8 +200,6 @@ The analytics module provides interactive visualizations including:
 
 ## Project Architecture
 
-## 🏗️ System Architecture
-
 ```mermaid
 flowchart TD
 
