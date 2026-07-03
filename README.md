@@ -108,8 +108,7 @@ This system enables IT support teams to proactively identify high-risk service t
 ### 1) Main Prediction Interface
 
 <p align="center">
-    <img width="1470" height="789" alt="3" src="<img width="1470" height="829" alt="1" src="https://github.com/user-attachments/assets/8631e80b-ca74-401a-80d1-7e20652f79f5" />
-" />
+    <img width="1470" height="829" alt="1" src="https://github.com/user-attachments/assets/4bdb6d4e-e959-4d90-88bf-93bd2b3473be" />
 </p>
 
 ---
@@ -117,7 +116,7 @@ This system enables IT support teams to proactively identify high-risk service t
 ### 2) Prediction Result
 
 <p align="center">
-    <img width="1253" height="656" alt="4 1" src="https://github.com/user-attachments/assets/9b79b0c4-249f-46a2-b9d1-d20cae03b5aa" />
+    <img width="1236" height="498" alt="2" src="https://github.com/user-attachments/assets/7fe8e988-ee51-4e71-837d-65e3ab880313" />
 </p>
 
 ---
