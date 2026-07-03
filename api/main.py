@@ -6,8 +6,12 @@ import pandas as pd
 
 from components.prediction import get_prediction_result
 from components.recommendations import get_recommendations
-from database.database import save_prediction
-from database.database import get_all_predictions
+from database.database import (
+    create_database,
+    save_prediction,
+    get_all_predictions
+)
+
 
 app = FastAPI(
     title="ITMS Decision Support API",
@@ -24,6 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_PATH = BASE_DIR / "model" / "final_model.pkl"
 
 model = joblib.load(MODEL_PATH)
+
+create_database()
 
 @app.get("/", tags=["General"])
 def home():
