@@ -200,34 +200,34 @@ The analytics module provides interactive visualizations including:
 
 ## Project Architecture
 
+## 🏗️ System Architecture
+
 ```mermaid
 flowchart TD
 
-    U["User"]
+    U["👤 User"]
 
-    U --> S["Streamlit Frontend
-    User Interface"]
+    U --> S["Streamlit Frontend<br/>User Interface"]
 
     S -->|"REST API (HTTP POST)"| F["FastAPI Backend"]
 
-    F --> P["Data Preprocessing
-    Feature Encoding"]
+    F --> P["Data Preprocessing<br/>Feature Encoding"]
 
-    P --> M["Random Forest
-    ML Model (.pkl)"]
+    P --> M["Random Forest<br/>ML Model (.pkl)"]
 
-    M --> R["Prediction
-    Probability
-    Risk Level"]
+    M --> R["Prediction Response<br/>• SLA Breach Prediction<br/>• Probability Score<br/>• Risk Level"]
 
-    R --> DB["SQLite Database
-    Prediction History"]
+    R --> ST["Store Prediction"]
 
-    DB --> D["Analytics Dashboard"]
+    ST --> DB["SQLite Database"]
 
-    R --> F
-    F --> S
-    D --> S
+    DB --> PH["Prediction History"]
+
+    DB --> AD["Analytics Dashboard"]
+
+    PH --> S
+
+    AD --> S
 
     S --> U
 ```
