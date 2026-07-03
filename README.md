@@ -392,7 +392,8 @@ Intelligent-ITSM-Decision-Support-System
 │   ├── database.py
 │   └── predictions.db
 │
-├── docs/images                  # Documentation and screenshots
+├── docs/
+└── images/                      # Documentation screenshots
 │
 ├── model/                       # Trained ML model
 │   ├── final_model.pkl
@@ -544,23 +545,22 @@ http://127.0.0.1:8000/docs
 
 Although the current application is fully functional, several enhancements can further improve its capabilities:
 
-- User Authentication & Role-Based Access Control
-- Cloud Database Integration (PostgreSQL)
 - Docker Containerization
 - CI/CD Pipeline with GitHub Actions
-- Kubernetes Deployment
+- Cloud Database Integration (PostgreSQL)
 - Real-Time Ticket Monitoring
 - Explainable AI Dashboard
-- Automated Model Retraining
 - Email & Slack Alert Integration
+- Automated Model Retraining
 - Multi-model Ensemble Prediction
+- Kubernetes Deployment
 - Cloud Deployment with Auto Scaling
 
 ---
 
 ## Live Deployment
 
-The application is deployed as:
+The application is publicly deployed using:
 
 - Streamlit Cloud (Frontend)
 - Render (FastAPI Backend)
@@ -583,20 +583,32 @@ The deployed system successfully integrates machine learning with enterprise ITS
 
 The application enables proactive identification of high-risk service tickets, helping IT teams prioritize critical incidents before SLA violations occur.
 
+---
+
 ## License
 
 This project is licensed under the MIT License.
 
 For more information, see the [LICENSE](LICENSE) file.
 
+---
+
 ## Author
 
 **Tanmay Jindal**
 
-Computer Science Enginerring Undergraduate
+Computer Science Engineering Undergraduate
 
 Netaji Subhas University of Technology (NSUT)
 
-GitHub: **https://github.com/TanmayJindal1205**
+GitHub: **[@TanmayJindal1205](https://github.com/TanmayJindal1205)**
 
 If you found this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+<p align="center">
+
+Made with ❤️ using Python, Streamlit, FastAPI and Scikit-learn
+
+</p>
