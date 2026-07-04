@@ -3,7 +3,9 @@ from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-DB_PATH = Path("database") / "predictions.db"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DB_PATH = BASE_DIR / "database" / "predictions.db"
+
 DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 
