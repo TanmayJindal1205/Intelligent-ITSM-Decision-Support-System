@@ -10,8 +10,6 @@ from components.charts import (
     create_high_risk_chart
 )
 import requests
-from io import BytesIO
-from datetime import datetime
 
 API_BASE_URL = "https://intelligent-itsm-api.onrender.com"
 
@@ -124,99 +122,6 @@ with col4:
         "Average Probability",
         f"{average_probability:.1f}%"
     )
-
-# ==========================================================
-# DOWNLOAD ANALYTICS REPORT
-# ==========================================================
-
-excel_buffer = BytesIO()
-
-with pd.ExcelWriter(
-    excel_buffer,
-    engine="openpyxl"
-) as writer:
-
-    summary_df = pd.DataFrame({
-
-        "Metric": [
-
-            "Total Predictions",
-            "Breach Rate (%)",
-            "High Risk Tickets",
-            "Average Probability (%)"
-
-        ],
-
-        "Value": [
-
-            total_predictions,
-            round(breach_rate, 2),
-            high_risk,
-            round(average_probability, 2)
-
-        ]
-
-    })
-
-    summary_df.to_excel(
-        writer,
-        sheet_name="Executive Summary",
-        index=False
-    )
-
-    risk_distribution = (
-        df["Risk Level"]
-        .value_counts()
-        .reindex(
-            ["LOW", "MEDIUM", "HIGH"],
-            fill_value=0
-        )
-        .reset_index()
-    )
-
-    risk_distribution.columns = [
-        "Risk Level",
-        "Count"
-    ]
-
-    risk_distribution.to_excel(
-        writer,
-        sheet_name="Risk Distribution",
-        index=False
-    )
-
-    department_analysis = (
-        df[df["Prediction"] == "Breach"]
-        .groupby("Department")
-        .size()
-        .reset_index(name="Breach Count")
-        .sort_values(
-            "Breach Count",
-            ascending=False
-        )
-    )
-
-    department_analysis.to_excel(
-        writer,
-        sheet_name="Department Analysis",
-        index=False
-    )
-
-excel_buffer.seek(0)
-
-st.download_button(
-
-    label="📥 Download Analytics Report",
-
-    data=excel_buffer,
-
-    file_name=f"Analytics_Report_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.xlsx",
-
-    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-
-    use_container_width=True
-
-)
 
 st.divider()
 
