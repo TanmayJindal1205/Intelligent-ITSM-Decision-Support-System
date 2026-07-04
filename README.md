@@ -281,16 +281,21 @@ Enterprise ITSM Dataset (JSL)
 Data Cleaning & Preprocessing
         │
         ▼
+Feature Engineering
+        │
+        ▼
 Ordinal Encoding
         │
         ▼
-SMOTENC (Class Imbalance Handling)
+SMOTENC
+(Class Imbalance Handling)
         │
         ▼
 Stratified Train-Test Split
         │
         ▼
-Model Training
+Candidate Model Training
+(Random Forest • XGBoost • LightGBM)
         │
         ▼
 Cross Validation
@@ -299,13 +304,14 @@ Cross Validation
 GridSearchCV Hyperparameter Tuning
         │
         ▼
-Model Evaluation
+Performance Evaluation
         │
         ▼
-Random Forest Selection
+Best Model Selection
+(Random Forest)
         │
         ▼
-Deployment
+SHAP Explainability Analysis
 ```
 
 ---
