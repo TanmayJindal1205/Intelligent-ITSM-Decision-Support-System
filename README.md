@@ -377,49 +377,58 @@ These outputs are stored in a SQLite database and are available for historical a
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```text
 Intelligent-ITSM-Decision-Support-System
 │
-├── api/                         # FastAPI backend
-│   └── main.py
+├── api/                                 # FastAPI backend
+│   ├── main.py                          # REST API endpoints
+│   └── schemas.py                       # Request/response schemas
 │
-├── assets/                      # CSS styling and static assets
-│   └── style.css
+├── assets/                              # UI assets
+│   └── style.css                        # Custom Streamlit styling
 │
-├── components/                  # Reusable Streamlit components
-│   ├── cards.py
-│   ├── prediction.py
-│   ├── recommendations.py
-│   └── ui.py
+├── components/                          # Reusable application modules
+│   ├── cards.py                         # Metric cards
+│   ├── charts.py                        # Analytics visualizations
+│   ├── prediction.py                    # ML prediction engine
+│   ├── recommendations.py               # Intelligent recommendations
+│   └── ui.py                            # Reusable UI components
 │
-├── database/                    # SQLite database
-│   ├── database.py
-│   └── predictions.db
+├── database/                            # SQLite database
+│   ├── database.py                      # Database operations (CRUD)
+│   └── predictions.db                   # Prediction history database
 │
 ├── docs/
-    └── images/                  # Documentation screenshots
+│   └── images/                          # README assets & screenshots
+│       ├── architecture.png
+│       ├── workflow.png
+│       ├── prediction-page.png
+│       ├── history-page.png
+│       ├── analytics-dashboard.png
+│       ├── swagger-api.png
+│       └── banner.png
 │
-├── model/                       # Trained ML model
-│   ├── final_model.pkl
-│   └── metadata.json
+├── model/                               # Trained ML model
+│   ├── final_model.pkl                  # Random Forest model
+│   └── metadata.json                    # Encoders & feature metadata
 │
-├── notebooks/                   # Model development notebook
+├── notebooks/                           # ML experimentation
 │   └── ITSM_Model_Training_Pipeline.ipynb
 │
-├── pages/                       # Additional Streamlit pages
+├── pages/                               # Streamlit multi-page application
 │   ├── Prediction_History.py
 │   └── Analytics_Dashboard.py
 │
-├── tests/                       # Test scripts
+├── tests/
+│   └── test_model.py                    # Model testing
 │
-├── .streamlit/
-│
-├── app.py                       # Main Streamlit application
-├── requirements.txt
+├── app.py                               # Streamlit entry point
+├── requirements.txt                     # Project dependencies
+├── runtime.txt                          # Python runtime version
+├── README.md                            # Project documentation
 ├── LICENSE
-├── README.md
 └── .gitignore
 ```
 
