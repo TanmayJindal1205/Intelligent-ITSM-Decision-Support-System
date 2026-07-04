@@ -131,7 +131,7 @@ This system enables IT support teams to proactively identify high-risk service t
 ### 3) Prediction History
 
 <p align="center">
-    <img width="1470" height="789" alt="3" src="https://github.com/user-attachments/assets/e81274c3-d630-4f55-b9b7-fd81e8b0420f" />
+    <img width="1470" height="831" alt="1" src="https://github.com/user-attachments/assets/7a637365-1584-44e4-9440-20b9f8713e16" />
 </p>
 
 ---
@@ -139,15 +139,15 @@ This system enables IT support teams to proactively identify high-risk service t
 ### 4) Analytics Dashboard
 
 <p align="center">
-    <img width="1253" height="656" alt="4 1" src="https://github.com/user-attachments/assets/9b79b0c4-249f-46a2-b9d1-d20cae03b5aa" />
+    <img width="1470" height="800" alt="2" src="https://github.com/user-attachments/assets/6fa84287-e8a4-4807-83e9-8edc4309e213" />
 </p>
 
 <p align="center">
-    <img width="1189" height="799" alt="4 2" src="https://github.com/user-attachments/assets/bdc540fa-8df0-4545-8026-d69ee612c311" />
+    <img width="1152" height="408" alt="3" src="https://github.com/user-attachments/assets/f6fc9f1a-7d53-4e43-8c9a-74c6e2e62c70" />
 </p>
 
 <p align="center">
-    <img width="1133" height="467" alt="4 3" src="https://github.com/user-attachments/assets/6a55ec4c-a834-4a1e-83e5-e33439ab9aec" />
+    <img width="1238" height="732" alt="4" src="https://github.com/user-attachments/assets/21120198-4932-47be-bf1c-ec33ebd76214" />
 </p>
 
 ---
